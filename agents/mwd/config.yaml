@@ -1,0 +1,19 @@
+# ค่าตั้งของชุดประปา (MWD) — แก้ที่นี่ที่เดียว
+org: mwd
+display_name: "การประปานครหลวง (กปน.)"
+data_dir: "01_ประปา"
+dirs:
+  master: "01_master"
+  history: "02_historys"
+  report: "03_report_files"
+master_file: "master_mwd.xlsx"
+master_sheet: "master"
+master_columns:
+  unit: "unit"
+  machine: "machine"
+  building: "building"
+sender: "pachara.l@mwa.co.th"
+prefix: "mwd"                 # report mwd-YYYY-MM | history mwd-flow-history-YYYY-MM | label mwd-YYYY-MM
+flag_new_machines: false
+flag_color: "FF6666"
+prev_file_missing: "blank"

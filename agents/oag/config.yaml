@@ -1,0 +1,19 @@
+# ค่าตั้งของชุด สตง. (OAG) — แก้ที่นี่ที่เดียว
+org: oag
+display_name: "สำนักงานการตรวจเงินแผ่นดิน (สตง.)"
+data_dir: "02_สตง"
+dirs:
+  master: "01_master"
+  history: "02_historys"
+  report: "03_report_files"
+master_file: "master_oag.xlsx"
+master_sheet: null            # null = แท็บแรก
+master_columns:
+  unit: "unit"
+  machine: "machine"
+  building: "building"
+sender: "networkservice@oag.go.th"
+prefix: "oag"                 # report oag-YYYY-MM | history oag-flow-history-YYYY-MM | label oag-YYYY-MM
+flag_new_machines: true       # เครื่องที่ไม่มีในไฟล์เดือนก่อน -> ระบายแดงทั้งแถว
+flag_color: "FF6666"
+prev_file_missing: "zero"     # ไม่มีไฟล์เดือนก่อน: zero = previousMonth 0, diff = totalCounter | blank = เว้นว่าง
